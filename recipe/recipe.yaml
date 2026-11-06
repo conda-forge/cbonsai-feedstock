@@ -13,7 +13,7 @@ source:
   sha256: 2173a514752deab2e8c1aeb1f6daed730ba8132ef9065c8e738a21601e73ecf0
 
 build:
-  number: 0
+  number: 1
   skip: win
   script:
     - make install CC=$CC PREFIX=$PREFIX
@@ -23,7 +23,7 @@ requirements:
     - ${{ compiler('c') }}
     - ${{ stdlib('c') }}
     - make
-    - pkg-config
+    - pkgconf
     - scdoc
   host:
     - ncurses
